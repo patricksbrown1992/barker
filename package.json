@@ -30,5 +30,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patricksbrown1992/barker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patricksbrown1992/barker/issues"
+  },
+  "homepage": "https://github.com/patricksbrown1992/barker#readme"
 }
