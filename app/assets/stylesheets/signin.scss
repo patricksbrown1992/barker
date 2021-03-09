@@ -1,0 +1,95 @@
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  background-image: image-url("patrick-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+
+.sign-in-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.sign-in-title h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  color: #e50914;
+  line-height: 90px;
+  vertical-align: middle;
+  font-weight: 800;
+}
+
+.sign-in-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0a0a07;
+  height: 660px;
+  width: 380px;
+}
+
+.sign-in-body h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  margin-top: 60px;
+}
+
+.sign-in-body input {
+  color: #fff;
+  background-color: #333333;
+  width: 300px;
+  height: 45px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  outline: none;
+  border: none;
+}
+
+.sign-in-form button {
+  width: 300px;
+  padding: 19px 16px;
+  color: #fff;
+  background-color: #e50914;
+  display: flex;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.redirect-to-sign-up {
+  display: flex;
+  flex-direction: row;
+}
+
+.redirect-to-sign-up h3 {
+  color: #474946;
+  margin-right: 10px;
+}
+
+.redirect-to-sign-up a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sign-in-form li {
+  list-style: none;
+  color: red;
+  font-family: sans-serif;
+}
