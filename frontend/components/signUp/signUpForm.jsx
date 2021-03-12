@@ -10,13 +10,24 @@ const SignUpForm = (props) => {
     return "";
   });
 
+<<<<<<< HEAD
+=======
+  const [username, updateUsername] = useState(() => {
+    return "";
+  });
+
+>>>>>>> users
   const [password, updatePassword] = useState(() => {
     return "";
   });
 
   function handleSubmit(e) {
     e.preventDefault();
+<<<<<<< HEAD
     props.signup({ email, password });
+=======
+    props.signup({ email, password, username });
+>>>>>>> users
     updatePassword("");
     updateEmail("");
     props.clearErrors();
@@ -38,6 +49,15 @@ const SignUpForm = (props) => {
           onChange={(e) => updateEmail(e.target.value)}
         />
         <input
+<<<<<<< HEAD
+=======
+          type="text"
+          value={username}
+          placeholder="username"
+          onChange={(e) => updateUsername(e.target.value)}
+        />
+        <input
+>>>>>>> users
           type="password"
           value={password}
           placeholder="password"
