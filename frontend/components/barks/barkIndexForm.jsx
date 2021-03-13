@@ -4,12 +4,13 @@ import { logout} from "../../actions/sessionActions";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const BarkIndex = ({ logout }) => {
-
+const BarkIndex = ({ logout, user, errors }) => {
 
   return (
     <div className="sign-in-form">
-        <h1>Bark index</h1>
+
+        <h1>Hi {user.username}!</h1>
+        
         <button onClick={() => logout()}>Log out</button>
     </div>
   );
@@ -18,10 +19,10 @@ const BarkIndex = ({ logout }) => {
 
 const msp = (state) => ({
   errors: state.errors,
+  user: state.entities.user[state.session.id]
 });
 
 const mdp = (dispatch) => ({
-  login: (user) => dispatch(login(user)),
   logout: () => dispatch(logout()),
 });
 
