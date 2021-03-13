@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   root "static_pages#root"
   
   namespace :api, defaults: {format: :json} do
-
+    get 'barks/get10', to: 'barks#get10'
     resources :users, only: [:create]
     resource :session, only: [:destroy, :create]
-
+    resources :barks, only: [:index, :create, :destroy, :update]
   end
 
 end
