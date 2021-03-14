@@ -30,7 +30,7 @@ const SignUpForm = (props) => {
     <div className="sign-up-form">
       <div className="sign-up-title">
         <Link to="/">
-          <img src={window.big} />
+          {/* <img src={window.big} /> */}
         </Link>
       </div>
       <div className="sign-in-body">

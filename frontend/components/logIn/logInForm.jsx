@@ -25,7 +25,7 @@ const LogInForm = ({ login, clearErrors, errors }) => {
     <div className="sign-in-form">
       <div className="sign-in-title">
         <Link to="/">
-          <img src={window.big} />
+          {/* <img src={window.big} /> */}
         </Link>
       </div>
       <div className="sign-in-body">

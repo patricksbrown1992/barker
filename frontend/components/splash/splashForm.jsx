@@ -40,7 +40,7 @@ const SplashForm = (props) => {
             </a>
           </ul>
         </div>
-        <img src={window.big} />
+        {/* <img src={window.big} /> */}
         <div className="splash-head-right">
           <h3>Have an account?</h3>
           <nav>
