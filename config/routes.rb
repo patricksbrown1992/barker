@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   namespace :api, defaults: {format: :json} do
     get 'barks/get10', to: 'barks#get10'
-    resources :users, only: [:create]
+    resources :users, only: [:create, :show]
     resource :session, only: [:destroy, :create]
     resources :barks, only: [:index, :create, :destroy, :update]
   end

@@ -1,7 +1,7 @@
 class Api::BarksController < ApplicationController
     def index
         @user = User.find(params[:user_id])
-        @barks = @user.barks
+        @barks = @user.barks.order("created_at DESC")
         render json: @barks, status: 200
     end
 
